@@ -22,7 +22,7 @@ class MultiLayerNet:
     weight_decay_lambda : Weight Decay（L2范数）的强度
     """
     def __init__(self, input_size, hidden_size_list, output_size,
-                 activation='relu', weight_init_std='relu', weight_decay_lambda=0):
+                 activation='relu', weight_init_std='relu', weight_decay_lambda=0.0):
         self.input_size = input_size
         self.output_size = output_size
         self.hidden_size_list = hidden_size_list
